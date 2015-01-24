@@ -1,11 +1,44 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using AllHandsOnDeck.Common;
 
 public class ObjCollider : IObj
 {
+	[Inject]
+	public FixLeak fixLeak { get; set; }
+
 	private IObj nearestObj;
 	private List<IObj> objectsInRange = new List<IObj>();
+
+	protected override void OnStart()
+	{
+		fixLeak.AddListener (RemoveLeak);
+	}
+
+	private void RemoveLeak(Leak leak)
+	{
+		if(objectsInRange.Contains(leak))
+		{
+			objectsInRange.Remove (leak);
+		}
+	}
+
+	public bool isNearestColliderLeak
+	{
+		get
+		{
+			if(nearestObj != null)
+			{
+				Leak leak = (Leak) nearestObj;
+				if(leak != null)
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+	}
 
 	void OnTriggerEnter(Collider collider)
 	{
@@ -27,14 +60,18 @@ public class ObjCollider : IObj
 
 	void Update()
 	{
-		float minDistance = 0;
+		float minDistance = float.MaxValue;
+		nearestObj = null;
 		foreach(IObj obj in objectsInRange)
 		{
-			float dist = Vector3.Distance(obj.transform.position, transform.position);
-			if(dist > minDistance)
+			if(obj.gameObject.activeSelf)
 			{
-				minDistance = dist;
-				nearestObj = obj;
+				float dist = Vector3.Distance(obj.transform.position, transform.position);
+				if(dist < minDistance)
+				{
+					minDistance = dist;
+					nearestObj = obj;
+				}
 			}
 		}
 	}

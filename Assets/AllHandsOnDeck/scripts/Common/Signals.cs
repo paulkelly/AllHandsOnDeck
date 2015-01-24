@@ -11,4 +11,12 @@ namespace AllHandsOnDeck.Common
 	public class RemoveWater : Signal<float>
 	{
 	}
+
+	public class SpringLeak : Signal<Leak>
+	{
+	}
+
+	public class FixLeak : Signal<Leak>
+	{
+	}
 }

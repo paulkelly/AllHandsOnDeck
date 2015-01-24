@@ -14,13 +14,26 @@ namespace AllHandsOnDeck.Character
 		public float turnSpeed;
 
 		public Animator animator;
-		public IObj objCollider;
+		public ObjCollider objCollider;
 
 		public float animatorSpeed
 		{
 			set
 			{
 				animator.SetFloat("speed", value);
+			}
+		}
+
+		public bool stopLeak
+		{
+			get
+			{
+				return animator.GetBool("stop");
+			}
+
+			set
+			{
+				animator.SetBool("stop", value);
 			}
 		}
 		
@@ -44,7 +57,7 @@ namespace AllHandsOnDeck.Character
 			
 			translation.Set (translation.x, 0, translation.z);
 			
-			if(translation.magnitude > Mathf.Epsilon)
+			if(translation.magnitude > Mathf.Epsilon && !stopLeak)
 			{
 				Rotate (translation);			
 			}
@@ -61,11 +74,16 @@ namespace AllHandsOnDeck.Character
 	
 		public void Action1Down ()
 		{
+			if(objCollider.isNearestColliderLeak)
+			{
+				stopLeak = true;
+			}
 			objCollider.ADown ();
 		}
 
 		public void Action1Up ()
 		{
+			stopLeak = false;
 			objCollider.AUp ();
 		}
 	

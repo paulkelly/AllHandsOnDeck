@@ -17,7 +17,8 @@ namespace AllHandsOnDeck.Context
 			injectionBinder.Bind<AddWater> ().ToSingleton ();
 			injectionBinder.Bind<RemoveWater> ().ToSingleton ();
 
-			//mediationBinder.Bind<WaterLevelUpdater> ().To<WaterLevelUpdaterM> ();
+			injectionBinder.Bind<SpringLeak> ().ToSingleton ();
+			injectionBinder.Bind<FixLeak> ().ToSingleton ();
 		}
 	}
 }

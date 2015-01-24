@@ -7,6 +7,12 @@ public class Leak : IObj
 	[Inject]
 	public AddWater addWater { get; set; }
 
+	[Inject]
+	public SpringLeak springLeak { get; set; }
+
+	[Inject]
+	public FixLeak fixLeak { get; set; }
+
 	private bool plugged = false;
 	public bool Plugged
 	{
@@ -28,9 +34,21 @@ public class Leak : IObj
 	[Range (0,60)]
 	public float waterPerSecond;
 
+	private void Enable()
+	{
+		gameObject.SetActive (true);
+	}
+
+	private void Disable()
+	{
+		gameObject.SetActive (false);
+	}
+
 	void Start()
 	{
+		springLeak.AddListener (SpringLeak);
 		Plugged = false;
+		Disable ();
 	}
 
 	void Update()
@@ -41,20 +59,33 @@ public class Leak : IObj
 		}
 	}
 
+	public void SpringLeak(Leak leak)
+	{
+		if(leak.GetHashCode() == GetHashCode())
+		{
+			Enable ();
+		}
+	}
+
+	public void FixLeak()
+	{
+		fixLeak.Dispatch (this);
+		Disable ();
+	}
+
 	public override void ADown ()
 	{
-		Debug.Log ("ADown Leak");
 		Plugged = true;
 	}
 	
 	public override void AUp ()
 	{
-		Debug.Log ("AUp Leak");
 		Plugged = false;
 	}
 	
 	public override void BDown ()
 	{
+		FixLeak ();
 	}
 	
 	public override void BUp ()
