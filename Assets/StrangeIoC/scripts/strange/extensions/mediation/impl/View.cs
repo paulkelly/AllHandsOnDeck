@@ -79,6 +79,11 @@ namespace strange.extensions.mediation.impl
 		{
 			if (autoRegisterWithContext && !registeredWithContext)
 				bubbleToContext(this, true, true);
+			OnStart ();
+		}
+
+		protected virtual void OnStart()
+		{
 		}
 
 		/// A MonoBehaviour OnDestroy handler

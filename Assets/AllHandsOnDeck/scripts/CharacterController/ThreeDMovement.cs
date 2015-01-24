@@ -12,6 +12,17 @@ namespace AllHandsOnDeck.Character
 		
 		[Range (0,400)]
 		public float turnSpeed;
+
+		public Animator animator;
+		public IObj objCollider;
+
+		public float animatorSpeed
+		{
+			set
+			{
+				animator.SetFloat("speed", value);
+			}
+		}
 		
 		void Start ()
 		{
@@ -37,29 +48,50 @@ namespace AllHandsOnDeck.Character
 			{
 				Rotate (translation);			
 			}
-			transform.Translate (translation * speed * Time.deltaTime, Space.World);
+			//transform.Translate (translation * speed * Time.deltaTime, Space.World);
+			//rigidbody.MovePosition (rigidbody.position + translation * speed * Time.deltaTime);
+			animatorSpeed = translation.magnitude;
 		}
 		
 		private void Rotate(Vector3 dir)
 		{
 			//transform.LookAt(dir);
 			transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(dir), turnSpeed * Time.deltaTime);
-			
 		}
 	
-		public void Action1 ()
+		public void Action1Down ()
+		{
+			objCollider.ADown ();
+		}
+
+		public void Action1Up ()
+		{
+			objCollider.AUp ();
+		}
+	
+		public void Action2Down ()
+		{
+			objCollider.BDown ();
+		}
+
+		public void Action2Up ()
+		{
+			objCollider.BUp ();
+		}
+	
+		public void Action3Down ()
+		{
+		}
+
+		public void Action3Up ()
 		{
 		}
 	
-		public void Action2 ()
+		public void Action4Down ()
 		{
 		}
-	
-		public void Action3 ()
-		{
-		}
-	
-		public void Action4 ()
+
+		public void Action4Up ()
 		{
 		}
 	

@@ -26,19 +26,40 @@ namespace AllHandsOnDeck.InputManager
 		
 			if(inputDevice.Action1.WasPressed)
 			{
-				character.Action1();
+				character.Action1Down();
 			}
-			if(inputDevice.Action2)
+			if(inputDevice.Action1.WasReleased)
 			{
-				character.Action2();
+				character.Action1Up();
 			}
-			if(inputDevice.Action3)
+
+
+			if(inputDevice.Action2.WasPressed)
 			{
-				character.Action3();
+				character.Action2Down();
 			}
-			if(inputDevice.Action4)
+			if(inputDevice.Action2.WasReleased)
 			{
-				character.Action4();
+				character.Action2Up();
+			}
+
+			if(inputDevice.Action3.WasPressed)
+			{
+				character.Action3Down();
+			}
+			if(inputDevice.Action3.WasReleased)
+			{
+				character.Action3Up();
+			}
+
+
+			if(inputDevice.Action4.WasPressed)
+			{
+				character.Action4Down();
+			}
+			if(inputDevice.Action4.WasReleased)
+			{
+				character.Action4Up();
 			}
 		}
 	}

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using AllHandsOnDeck.Common;
 
 namespace AllHandsOnDeck.Context
 {
@@ -11,6 +12,12 @@ namespace AllHandsOnDeck.Context
 		
 		protected override void mapBindings()
 		{
+			base.mapBindings ();
+
+			injectionBinder.Bind<AddWater> ().ToSingleton ();
+			injectionBinder.Bind<RemoveWater> ().ToSingleton ();
+
+			//mediationBinder.Bind<WaterLevelUpdater> ().To<WaterLevelUpdaterM> ();
 		}
 	}
 }

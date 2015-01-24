@@ -7,12 +7,16 @@ namespace AllHandsOnDeck.Character
 	{
 		void Move(Vector2 value);
 		
-		void Action1();
+		void Action1Down();
+		void Action1Up();
 		
-		void Action2();
-		
-		void Action3();
-		
-		void Action4();
+		void Action2Down();
+		void Action2Up();
+
+		void Action3Down();
+		void Action3Up();
+
+		void Action4Down();
+		void Action4Up();
 	}
 }
