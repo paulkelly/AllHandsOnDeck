@@ -9,6 +9,9 @@ public class WaterLevelUpdater : View
 	[Inject]
 	public AddWater addWater { get; set; }
 
+	[Inject]
+	public RemoveWater removeWater { get; set; }
+
 	public Transform ship;
 	public float minY;
 	public float maxY;
@@ -19,6 +22,7 @@ public class WaterLevelUpdater : View
 	protected override void OnStart()
 	{
 		addWater.AddListener (IncreaseWaterLevel);
+		removeWater.AddListener (DecreaseWaterLevel);
 	}
 
 	void Update()
@@ -30,8 +34,16 @@ public class WaterLevelUpdater : View
 
 	private void IncreaseWaterLevel(float amount)
 	{
-		Debug.Log ("Adding water: " + amount);
 		waterLevel += amount;
+	}
+
+	private void DecreaseWaterLevel(float amount)
+	{
+		waterLevel -= amount;
+		if(waterLevel < 0)
+		{
+			waterLevel = 0;
+		}
 	}
 
 }

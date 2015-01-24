@@ -24,8 +24,8 @@ public class Leak : IObj
 		set
 		{
 			plugged = value;
-			unpluggedEffect.Enabled = plugged;
-			pluggedEffect.Enabled = !plugged;
+			unpluggedEffect.Enabled = !plugged;
+			pluggedEffect.Enabled = plugged;
 		}
 	}
 	public PartEffectEnabler unpluggedEffect;

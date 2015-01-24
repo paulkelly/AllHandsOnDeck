@@ -1,7 +1,20 @@
 ﻿using strange.extensions.mediation.impl;
+using UnityEngine;
 
 public class IObj : View
 {
+	public virtual void PickUp (Transform chrItem)
+	{
+	}
+
+	public virtual void Drop ()
+	{
+	}
+
+	public virtual void ThrowWater(bool outside)
+	{
+	}
+
 	public virtual void ADown ()
 	{
 	}

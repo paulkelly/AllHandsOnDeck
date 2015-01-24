@@ -25,7 +25,7 @@ public class PartEffectEnabler : MonoBehaviour
 	{
 		foreach(ParticleSystem system in particeSystems)
 		{
-			system.Stop();
+			system.Play();
 		}
 	}
 
@@ -33,7 +33,7 @@ public class PartEffectEnabler : MonoBehaviour
 	{
 		foreach(ParticleSystem system in particeSystems)
 		{
-			system.Play();
+			system.Stop();
 		}
 	}
 }

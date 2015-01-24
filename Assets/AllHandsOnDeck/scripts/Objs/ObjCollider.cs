@@ -2,13 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using AllHandsOnDeck.Common;
+using System;
 
 public class ObjCollider : IObj
 {
 	[Inject]
 	public FixLeak fixLeak { get; set; }
 
-	private IObj nearestObj;
+	public IObj nearestObj;
 	private List<IObj> objectsInRange = new List<IObj>();
 
 	protected override void OnStart()
@@ -30,8 +31,39 @@ public class ObjCollider : IObj
 		{
 			if(nearestObj != null)
 			{
-				Leak leak = (Leak) nearestObj;
+				Leak leak = null;
+				try
+				{
+					leak = (Leak) nearestObj;
+				}
+				catch(InvalidCastException e)
+				{
+				}
+
 				if(leak != null)
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+	}
+
+	public bool isNearestColliderBucket
+	{
+		get
+		{
+			if(nearestObj != null)
+			{
+				Bucket bucket = null;
+				try
+				{
+					bucket = (Bucket) nearestObj;
+				}
+				catch(InvalidCastException e)
+				{
+				}
+				if(bucket != null)
 				{
 					return true;
 				}
@@ -73,6 +105,14 @@ public class ObjCollider : IObj
 					nearestObj = obj;
 				}
 			}
+		}
+	}
+
+	public override void PickUp (Transform chrItem)
+	{
+		if(nearestObj != null)
+		{
+			nearestObj.PickUp(chrItem);
 		}
 	}
 
