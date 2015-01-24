@@ -7,6 +7,11 @@ public class Bucket : IObj
 	[Inject]
 	public RemoveWater removeWater { get; set; }
 
+	[Inject]
+	public RemoveObject removeObject { get; set; }
+
+	public Collider interactCollider;
+
 	public Transform world;
 
 	[Range (0,6)]
@@ -20,12 +25,15 @@ public class Bucket : IObj
 		transform.localPosition = Vector3.zero;
 		transform.localRotation = Quaternion.identity;
 		rigidbody.isKinematic = true;
+		removeObject.Dispatch (this);
+		interactCollider.enabled = false;
 	}
 
 	public override void Drop ()
 	{
 		transform.parent = world;
 		rigidbody.isKinematic = false;
+		interactCollider.enabled = true;
 	}
 
 	public override void ThrowWater(bool outside)
@@ -36,14 +44,11 @@ public class Bucket : IObj
 		{
 			removeWater.Dispatch(volume);
 		}
-
-		Debug.Log ("Throw Water: " + outside);
 	}
 
 	public override void ADown ()
 	{
 		full = true;
-		Debug.Log ("Bucket Full");
 	}
 	
 	public override void AUp ()

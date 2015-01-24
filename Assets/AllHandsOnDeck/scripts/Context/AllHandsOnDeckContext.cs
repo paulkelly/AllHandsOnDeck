@@ -19,6 +19,8 @@ namespace AllHandsOnDeck.Context
 
 			injectionBinder.Bind<SpringLeak> ().ToSingleton ();
 			injectionBinder.Bind<FixLeak> ().ToSingleton ();
+
+			injectionBinder.Bind<RemoveObject> ().ToSingleton ();
 		}
 	}
 }

@@ -19,4 +19,8 @@ namespace AllHandsOnDeck.Common
 	public class FixLeak : Signal<Leak>
 	{
 	}
+
+	public class RemoveObject : Signal<IObj>
+	{
+	}
 }

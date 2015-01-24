@@ -7,22 +7,97 @@ ModelImporter:
     100002: deck
     100004: ship
     100006: walls
+    100008: Box001
+    100010: Box003
+    100012: Box004
+    100014: Cylinder004
+    100016: Cylinder005
+    100018: Line002
+    100020: Line004
+    100022: Line005
+    100024: Object001
+    100026: Object002
+    100028: Object004
+    100030: Plane001
+    100032: Plane002
+    100034: Plane004
+    100036: STAIRAS
     400000: //RootNode
     400002: deck
     400004: ship
     400006: walls
+    400008: Box001
+    400010: Box003
+    400012: Box004
+    400014: Cylinder004
+    400016: Cylinder005
+    400018: Line002
+    400020: Line004
+    400022: Line005
+    400024: Object001
+    400026: Object002
+    400028: Object004
+    400030: Plane001
+    400032: Plane002
+    400034: Plane004
+    400036: STAIRAS
     2300000: //RootNode
     2300002: deck
     2300004: ship
     2300006: walls
+    2300008: Box001
+    2300010: Box003
+    2300012: Box004
+    2300014: Cylinder004
+    2300016: Cylinder005
+    2300018: Line002
+    2300020: Line004
+    2300022: Line005
+    2300024: Object001
+    2300026: Object002
+    2300028: Object004
+    2300030: Plane001
+    2300032: Plane002
+    2300034: Plane004
+    2300036: STAIRAS
     3300000: //RootNode
     3300002: deck
     3300004: ship
     3300006: walls
+    3300008: Box001
+    3300010: Box003
+    3300012: Box004
+    3300014: Cylinder004
+    3300016: Cylinder005
+    3300018: Line002
+    3300020: Line004
+    3300022: Line005
+    3300024: Object001
+    3300026: Object002
+    3300028: Object004
+    3300030: Plane001
+    3300032: Plane002
+    3300034: Plane004
+    3300036: STAIRAS
     4300000: pCube1
     4300002: ship
     4300004: walls
     4300006: deck
+    4300008: Box001
+    4300010: Plane001
+    4300012: Plane002
+    4300014: Line002
+    4300016: Cylinder004
+    4300018: Box003
+    4300020: STAIRAS
+    4300022: Line004
+    4300024: Line005
+    4300026: Cylinder005
+    4300028: Object001
+    4300030: Object002
+    4300032: Box004
+    4300034: Object004
+    4300036: Plane004
     9500000: //RootNode
   materials:
     importMaterials: 1

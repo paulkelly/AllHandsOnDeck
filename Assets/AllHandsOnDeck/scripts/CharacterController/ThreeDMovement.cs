@@ -65,7 +65,6 @@ namespace AllHandsOnDeck.Character
 
 		public void CollectWater()
 		{
-			bucketFull = true;
 			CollectingWater = true;
 			holding.ADown();
 		}
@@ -74,18 +73,36 @@ namespace AllHandsOnDeck.Character
 		{
 			get
 			{
-				return false;
+				return animator.GetBool("skoop");
 			}
 
 			set
 			{
-
+				animator.SetBool("skoop", value);
 			}
 		}
 
 		public void ThrowWater()
 		{
-			ReleaseWater ();
+			animator.SetTrigger ("throw");
+		}
+
+		public bool Plug
+		{
+			get
+			{
+				return animator.GetBool("plug");
+			}
+			
+			set
+			{
+				animator.SetBool("plug", value);
+			}
+		}
+
+		public void Fix()
+		{
+			animator.SetTrigger ("fix");
 		}
 		
 		void Start ()
@@ -133,6 +150,10 @@ namespace AllHandsOnDeck.Character
 				{
 					CollectWater();
 				}
+				if(isHoldingPlug)
+				{
+					Fix();
+				}
 			}
 			else
 			{
@@ -143,8 +164,13 @@ namespace AllHandsOnDeck.Character
 					stopLeak = true;
 					objCollider.ADown ();
 				}
-				if(objCollider.isNearestColliderBucket)
+				if(objCollider.isNearestColliderBucket || objCollider.isNearestColliderPlug)
 				{
+					if(objCollider.isNearestColliderPlug)
+					{
+						Plug = true;
+					}
+
 					Grab();
 				}
 			}
@@ -165,6 +191,29 @@ namespace AllHandsOnDeck.Character
 					{
 					}
 					if(bucket != null)
+					{
+						return true;
+					}
+				}
+				return false;
+			}
+		}
+
+		public bool isHoldingPlug
+		{
+			get
+			{
+				if(holding != null)
+				{
+					Plug plug = null;
+					try
+					{
+						plug = (Plug) holding;
+					}
+					catch(InvalidCastException e)
+					{
+					}
+					if(plug != null)
 					{
 						return true;
 					}
@@ -198,7 +247,7 @@ namespace AllHandsOnDeck.Character
 
 		public void PickUp()
 		{
-			if(objCollider.isNearestColliderBucket)
+			if(objCollider.isNearestColliderBucket || objCollider.isNearestColliderPlug)
 			{
 				holding = objCollider.nearestObj;
 				holding.PickUp(item);
@@ -208,6 +257,18 @@ namespace AllHandsOnDeck.Character
 				{
 					Bucket = true;
 				}
+			}
+		}
+
+		public void PlugLeak()
+		{
+			if(objCollider.isNearestColliderLeak)
+			{
+				holding.ADown();
+				//objCollider.FixLeak();
+				hasItem = false;
+				holding.Use((Leak) objCollider.nearestObj);
+				holding = null;
 			}
 		}
 
@@ -221,6 +282,7 @@ namespace AllHandsOnDeck.Character
 					{
 						ThrowWater();
 						bucketFull = false;
+						CollectingWater = false;
 					}
 					else
 					{
@@ -292,6 +354,7 @@ namespace AllHandsOnDeck.Character
 				hasItem = false;
 				Bucket = false;
 				holding = null;
+				Plug = false;
 			}
 		}
 

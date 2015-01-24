@@ -37,6 +37,11 @@ public class Leak : IObj
 	private void Enable()
 	{
 		gameObject.SetActive (true);
+
+		if(plug != null)
+		{
+			plug.Pop();
+		}
 	}
 
 	private void Disable()
@@ -67,8 +72,10 @@ public class Leak : IObj
 		}
 	}
 
-	public void FixLeak()
+	private Plug plug = null;
+	public override void FixLeak(Plug plug)
 	{
+		this.plug = plug;
 		fixLeak.Dispatch (this);
 		Disable ();
 	}
@@ -85,7 +92,7 @@ public class Leak : IObj
 	
 	public override void BDown ()
 	{
-		FixLeak ();
+		//FixLeak ();
 	}
 	
 	public override void BUp ()

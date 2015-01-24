@@ -255,6 +255,11 @@ ModelImporter:
     7400008: stopEnd
     7400010: grab
     7400012: idleBucket
+    7400014: skoop
+    7400016: bucket
+    7400018: skoopAniEvent
+    7400020: runBucket
+    7400022: plug
     9500000: //RootNode
     13700000: body
     13700002: eyes
@@ -544,8 +549,8 @@ ModelImporter:
         weight: 1
       - path: head
         weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+      maskType: 1
+      maskSource: {fileID: 101100000, guid: 0a65a4bf45588421ba4d7cc2a1157a30, type: 2}
     - serializedVersion: 16
       name: run
       takeName: Take 001
@@ -814,8 +819,8 @@ ModelImporter:
         weight: 1
       - path: head
         weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+      maskType: 1
+      maskSource: {fileID: 101100000, guid: 0a65a4bf45588421ba4d7cc2a1157a30, type: 2}
     - serializedVersion: 16
       name: stopStart
       takeName: Take 001
@@ -1084,8 +1089,8 @@ ModelImporter:
         weight: 1
       - path: head
         weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+      maskType: 1
+      maskSource: {fileID: 101100000, guid: 0a65a4bf45588421ba4d7cc2a1157a30, type: 2}
     - serializedVersion: 16
       name: stop
       takeName: Take 001
@@ -1354,8 +1359,8 @@ ModelImporter:
         weight: 1
       - path: head
         weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+      maskType: 1
+      maskSource: {fileID: 101100000, guid: 0a65a4bf45588421ba4d7cc2a1157a30, type: 2}
     - serializedVersion: 16
       name: stopEnd
       takeName: Take 001
@@ -1624,8 +1629,8 @@ ModelImporter:
         weight: 1
       - path: head
         weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+      maskType: 1
+      maskSource: {fileID: 101100000, guid: 0a65a4bf45588421ba4d7cc2a1157a30, type: 2}
     - serializedVersion: 16
       name: grab
       takeName: Take 001
@@ -1901,8 +1906,8 @@ ModelImporter:
         weight: 1
       - path: head
         weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+      maskType: 1
+      maskSource: {fileID: 101100000, guid: 0a65a4bf45588421ba4d7cc2a1157a30, type: 2}
     - serializedVersion: 16
       name: idleBucket
       takeName: Take 001
@@ -1942,97 +1947,97 @@ ModelImporter:
       - path: Skeleton/Hips/Spine/Chest/Neck/Head
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/END
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/END 7
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/RightLipTop
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/RightLipTop/END 15
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/LeftLipTop
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/LeftLipTop/END 14
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/END 1
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LipBottom
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LipBottom/END
           17
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LeftLipBottom
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LeftLipBottom/joint2
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/RightLipBottom
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/RightLipBottom/joint2
           1
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/BottomTeeth
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/Tongue
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/Tongue/LipBottom 1
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEmotion
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEmotion/END 3
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftSnear
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftSnear/END 6
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidLow
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidLow/END 4
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidUp
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidUp/END 5
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEye
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEmotion
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEmotion/END 9
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightSnear
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightSnear/END 12
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidLow
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidLow/END 10
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidUp
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidUp/END 11
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEye
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/END 8
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/RightBrowEmotion
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/RightBrowEmotion/END 16
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/END 2
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/LeftBrowEmotion
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/LeftBrowEmotion/END 13
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm
@@ -2042,7 +2047,7 @@ ModelImporter:
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandEnd
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2
@@ -2050,7 +2055,7 @@ ModelImporter:
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky4
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2
@@ -2058,7 +2063,7 @@ ModelImporter:
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing4
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
@@ -2066,7 +2071,7 @@ ModelImporter:
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle4
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2
@@ -2074,7 +2079,7 @@ ModelImporter:
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex4
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2
@@ -2082,11 +2087,11 @@ ModelImporter:
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb4
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandParent
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftForearmTwist
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm
@@ -2096,7 +2101,7 @@ ModelImporter:
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandEnd
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2
@@ -2104,7 +2109,7 @@ ModelImporter:
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky4
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2
@@ -2112,7 +2117,7 @@ ModelImporter:
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing4
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2
@@ -2120,7 +2125,7 @@ ModelImporter:
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle4
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2
@@ -2128,7 +2133,7 @@ ModelImporter:
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex4
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2
@@ -2136,11 +2141,11 @@ ModelImporter:
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
         weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandParent
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightForearmTwist
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/RightUpLeg
         weight: 1
       - path: Skeleton/Hips/RightUpLeg/RightLeg
@@ -2150,7 +2155,7 @@ ModelImporter:
       - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot/RightToe
         weight: 1
       - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot/RightToe/RightToeEnd
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/LeftUpLeg
         weight: 1
       - path: Skeleton/Hips/LeftUpLeg/LeftLeg
@@ -2160,23 +2165,1394 @@ ModelImporter:
       - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToe
         weight: 1
       - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToe/LeftToeEnd
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/Crotch
-        weight: 0
+        weight: 1
       - path: Skeleton/Hips/item
-        weight: 0
+        weight: 1
       - path: eyes
-        weight: 0
+        weight: 1
       - path: body
-        weight: 0
+        weight: 1
       - path: head
-        weight: 0
-      maskType: 0
-      maskSource: {instanceID: 0}
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 101100000, guid: 0a65a4bf45588421ba4d7cc2a1157a30, type: 2}
+    - serializedVersion: 16
+      name: skoop
+      takeName: Take 001
+      firstFrame: 400
+      lastFrame: 460
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Skeleton
+        weight: 1
+      - path: Skeleton/Hips
+        weight: 1
+      - path: Skeleton/Hips/Spine
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/END
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/END 7
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/RightLipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/RightLipTop/END 15
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/LeftLipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/LeftLipTop/END 14
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/END 1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LipBottom/END
+          17
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LeftLipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LeftLipBottom/joint2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/RightLipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/RightLipBottom/joint2
+          1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/BottomTeeth
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/Tongue
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/Tongue/LipBottom 1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEmotion/END 3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftSnear
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftSnear/END 6
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidLow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidLow/END 4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidUp
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidUp/END 5
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEye
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEmotion/END 9
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightSnear
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightSnear/END 12
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidLow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidLow/END 10
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidUp
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidUp/END 11
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEye
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/END 8
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/RightBrowEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/RightBrowEmotion/END 16
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/END 2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/LeftBrowEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/LeftBrowEmotion/END 13
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandEnd
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandParent
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftForearmTwist
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandEnd
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandParent
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightForearmTwist
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot/RightToe
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot/RightToe/RightToeEnd
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToe
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToe/LeftToeEnd
+        weight: 1
+      - path: Skeleton/Hips/Crotch
+        weight: 1
+      - path: Skeleton/Hips/item
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: body
+        weight: 1
+      - path: head
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 101100000, guid: 0a65a4bf45588421ba4d7cc2a1157a30, type: 2}
+    - serializedVersion: 16
+      name: bucket
+      takeName: Take 001
+      firstFrame: 460
+      lastFrame: 495
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .747282624
+        functionName: ReleaseWater
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Skeleton
+        weight: 1
+      - path: Skeleton/Hips
+        weight: 1
+      - path: Skeleton/Hips/Spine
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/END
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/END 7
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/RightLipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/RightLipTop/END 15
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/LeftLipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/LeftLipTop/END 14
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/END 1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LipBottom/END
+          17
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LeftLipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LeftLipBottom/joint2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/RightLipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/RightLipBottom/joint2
+          1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/BottomTeeth
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/Tongue
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/Tongue/LipBottom 1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEmotion/END 3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftSnear
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftSnear/END 6
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidLow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidLow/END 4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidUp
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidUp/END 5
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEye
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEmotion/END 9
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightSnear
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightSnear/END 12
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidLow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidLow/END 10
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidUp
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidUp/END 11
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEye
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/END 8
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/RightBrowEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/RightBrowEmotion/END 16
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/END 2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/LeftBrowEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/LeftBrowEmotion/END 13
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandEnd
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandParent
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftForearmTwist
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandEnd
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandParent
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightForearmTwist
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot/RightToe
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot/RightToe/RightToeEnd
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToe
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToe/LeftToeEnd
+        weight: 1
+      - path: Skeleton/Hips/Crotch
+        weight: 1
+      - path: Skeleton/Hips/item
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: body
+        weight: 1
+      - path: head
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 101100000, guid: 0a65a4bf45588421ba4d7cc2a1157a30, type: 2}
+    - serializedVersion: 16
+      name: skoopAniEvent
+      takeName: Take 001
+      firstFrame: 430
+      lastFrame: 460
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0
+        functionName: FillBucket
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Skeleton
+        weight: 1
+      - path: Skeleton/Hips
+        weight: 1
+      - path: Skeleton/Hips/Spine
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/END
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/END 7
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/RightLipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/RightLipTop/END 15
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/LeftLipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/LeftLipTop/END 14
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/END 1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LipBottom/END
+          17
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LeftLipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LeftLipBottom/joint2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/RightLipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/RightLipBottom/joint2
+          1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/BottomTeeth
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/Tongue
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/Tongue/LipBottom 1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEmotion/END 3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftSnear
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftSnear/END 6
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidLow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidLow/END 4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidUp
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidUp/END 5
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEye
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEmotion/END 9
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightSnear
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightSnear/END 12
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidLow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidLow/END 10
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidUp
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidUp/END 11
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEye
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/END 8
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/RightBrowEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/RightBrowEmotion/END 16
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/END 2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/LeftBrowEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/LeftBrowEmotion/END 13
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandEnd
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandParent
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftForearmTwist
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandEnd
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandParent
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightForearmTwist
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot/RightToe
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot/RightToe/RightToeEnd
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToe
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToe/LeftToeEnd
+        weight: 1
+      - path: Skeleton/Hips/Crotch
+        weight: 1
+      - path: Skeleton/Hips/item
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: body
+        weight: 1
+      - path: head
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 101100000, guid: 0a65a4bf45588421ba4d7cc2a1157a30, type: 2}
+    - serializedVersion: 16
+      name: runBucket
+      takeName: Take 001
+      firstFrame: 500
+      lastFrame: 532
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Skeleton
+        weight: 1
+      - path: Skeleton/Hips
+        weight: 1
+      - path: Skeleton/Hips/Spine
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/END
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/END 7
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/RightLipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/RightLipTop/END 15
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/LeftLipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/LeftLipTop/END 14
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/END 1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LipBottom/END
+          17
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LeftLipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LeftLipBottom/joint2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/RightLipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/RightLipBottom/joint2
+          1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/BottomTeeth
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/Tongue
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/Tongue/LipBottom 1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEmotion/END 3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftSnear
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftSnear/END 6
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidLow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidLow/END 4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidUp
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidUp/END 5
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEye
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEmotion/END 9
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightSnear
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightSnear/END 12
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidLow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidLow/END 10
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidUp
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidUp/END 11
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEye
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/END 8
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/RightBrowEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/RightBrowEmotion/END 16
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/END 2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/LeftBrowEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/LeftBrowEmotion/END 13
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandEnd
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandParent
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftForearmTwist
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandEnd
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandParent
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightForearmTwist
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot/RightToe
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot/RightToe/RightToeEnd
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToe
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToe/LeftToeEnd
+        weight: 1
+      - path: Skeleton/Hips/Crotch
+        weight: 1
+      - path: Skeleton/Hips/item
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: body
+        weight: 1
+      - path: head
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 101100000, guid: 0a65a4bf45588421ba4d7cc2a1157a30, type: 2}
+    - serializedVersion: 16
+      name: plug
+      takeName: Take 001
+      firstFrame: 540
+      lastFrame: 580
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .503666699
+        functionName: PlugLeak
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Skeleton
+        weight: 1
+      - path: Skeleton/Hips
+        weight: 1
+      - path: Skeleton/Hips/Spine
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/END
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/END 7
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/RightLipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/RightLipTop/END 15
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/LeftLipTop
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LipTop/LeftLipTop/END 14
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/END 1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LipBottom/END
+          17
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LeftLipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/LeftLipBottom/joint2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/RightLipBottom
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/LipBottomRoot/RightLipBottom/joint2
+          1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/BottomTeeth
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/Tongue
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/Jaw/Tongue/LipBottom 1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEmotion/END 3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftSnear
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftSnear/END 6
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidLow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidLow/END 4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidUp
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftLidUp/END 5
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftEye
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEmotion/END 9
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightSnear
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightSnear/END 12
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidLow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidLow/END 10
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidUp
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightLidUp/END 11
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightEye
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/END 8
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/RightBrowEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/RightBrow/RightBrowEmotion/END 16
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/END 2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/LeftBrowEmotion
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/Neck/Head/LeftBrow/LeftBrowEmotion/END 13
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandEnd
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftHand/LeftHandParent
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForearm/LeftForearmTwist
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandEnd
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightHand/RightHandParent
+        weight: 1
+      - path: Skeleton/Hips/Spine/Chest/RightShoulder/RightArm/RightForearm/RightForearmTwist
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot/RightToe
+        weight: 1
+      - path: Skeleton/Hips/RightUpLeg/RightLeg/RightFoot/RightToe/RightToeEnd
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToe
+        weight: 1
+      - path: Skeleton/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToe/LeftToeEnd
+        weight: 1
+      - path: Skeleton/Hips/Crotch
+        weight: 1
+      - path: Skeleton/Hips/item
+        weight: 1
+      - path: eyes
+        weight: 1
+      - path: body
+        weight: 1
+      - path: head
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 101100000, guid: 0a65a4bf45588421ba4d7cc2a1157a30, type: 2}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: .0140000004
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -2657,577 +4033,577 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Hips
-      position: {x: -.00800695457, y: .90587759, z: .111935958}
+      position: {x: -.0112097375, y: 1.26822877, z: .156710356}
       rotation: {x: -.491197646, y: .508650005, z: -.491197646, w: .508650064}
       scale: {x: 1.00000012, y: 1.00000012, z: 1}
       transformModified: 1
     - name: RightUpLeg
-      position: {x: .0296328682, y: -1.54044226e-08, z: .144999996}
+      position: {x: .0414860174, y: -2.15661924e-08, z: .203000009}
       rotation: {x: .999657333, y: -.0261768699, z: -2.98023224e-08, w: 2.98023224e-08}
       scale: {x: .99999994, y: .99999994, z: 1.00000012}
       transformModified: 1
     - name: RightLeg
-      position: {x: .399999976, y: -3.2185352e-07, z: 5.3290704e-17}
+      position: {x: .560000002, y: -4.50594968e-07, z: 7.46069929e-17}
       rotation: {x: 1.49011612e-08, y: -4.47034836e-08, z: -.0174522549, w: .99984777}
       scale: {x: .99999994, y: 1.00000012, z: 1}
       transformModified: 1
     - name: RightFoot
-      position: {x: .370000005, y: 2.94268375e-07, z: 2.13162816e-16}
+      position: {x: .518000066, y: 4.11975748e-07, z: 2.98427971e-16}
       rotation: {x: -2.98023224e-08, y: 2.98023224e-08, z: .00872644782, w: .999961972}
       scale: {x: 1.00000036, y: 1.00000024, z: 1.00000036}
       transformModified: 1
     - name: RightToe
-      position: {x: .0649999976, y: .140000001, z: -1.59872109e-16}
+      position: {x: .0910000056, y: .19600001, z: -2.23820965e-16}
       rotation: {x: 0, y: -2.98023171e-08, z: .707106829, w: .707106769}
       scale: {x: 1.00000012, y: 1, z: 1}
       transformModified: 1
     - name: RightToeEnd
-      position: {x: .129999995, y: -6.23282688e-08, z: -1.59872109e-16}
+      position: {x: .182000011, y: -8.72595791e-08, z: -2.23820965e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftUpLeg
-      position: {x: .0296330974, y: 0, z: -.144999996}
+      position: {x: .0414863378, y: 0, z: -.203000009}
       rotation: {x: -.0261768997, y: -.999657393, z: 2.98023224e-08, w: 2.98023224e-08}
       scale: {x: 1, y: 1.00000012, z: .999999762}
       transformModified: 1
     - name: LeftLeg
-      position: {x: -.399999976, y: -1.54320999e-16, z: -7.1054272e-17}
+      position: {x: -.560000002, y: -2.16049412e-16, z: -9.94759861e-17}
       rotation: {x: 2.98023224e-08, y: 1.49011612e-08, z: -.0174522996, w: .99984771}
       scale: {x: 1, y: .99999994, z: .99999994}
       transformModified: 1
     - name: LeftFoot
-      position: {x: -.370000005, y: -1.67643676e-16, z: 2.13162816e-16}
+      position: {x: -.518000066, y: -2.34701157e-16, z: 2.98427971e-16}
       rotation: {x: -2.98023188e-08, y: -2.98023188e-08, z: -.00872647669, w: -.999961913}
       scale: {x: 1, y: .999999821, z: .99999994}
       transformModified: 1
     - name: LeftToe
-      position: {x: -.0649999976, y: -.140000001, z: -1.77635673e-16}
+      position: {x: -.0910000056, y: -.19600001, z: -2.48689959e-16}
       rotation: {x: -5.96046448e-08, y: 0, z: .707106769, w: .707106829}
       scale: {x: 1.00000012, y: 1, z: 1}
       transformModified: 1
     - name: LeftToeEnd
-      position: {x: -.129999995, y: 1.7763568e-17, z: 1.7763568e-17}
+      position: {x: -.182000011, y: 2.48689965e-17, z: 2.48689965e-17}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Crotch
-      position: {x: .0519999973, y: -.162, z: 1.20892227e-15}
+      position: {x: .072800003, y: -.22680001, z: 1.69249126e-15}
       rotation: {x: -2.98023224e-08, y: 8.94069672e-08, z: .782608151, w: .622514725}
       scale: {x: .99999994, y: 1.00000012, z: 1}
       transformModified: 1
     - name: Spine
-      position: {x: -.150331572, y: -.000321442261, z: -.00056096242}
+      position: {x: -.210464209, y: -.000450019201, z: -.000785347424}
       rotation: {x: 2.98023224e-08, y: -2.98023224e-08, z: .0394983292, w: -.999219656}
       scale: {x: 1.00000024, y: 1.00000024, z: 1.00000012}
       transformModified: 1
     - name: Chest
-      position: {x: -.239999995, y: -.00999999978, z: 4.99104767e-17}
+      position: {x: -.336000025, y: -.0140000004, z: 6.98746727e-17}
       rotation: {x: 0, y: 0, z: -.0432397127, w: .999064803}
       scale: {x: .999999702, y: .999999762, z: 1}
       transformModified: 1
     - name: Neck
-      position: {x: -.213839427, y: -.00999999978, z: 8.51991796e-17}
+      position: {x: -.299375206, y: -.0140000004, z: 1.19278862e-16}
       rotation: {x: 2.98023259e-08, y: -2.98023259e-08, z: -.0986745134, w: -.99511975}
       scale: {x: 1.00000012, y: 1, z: .999999881}
       transformModified: 1
     - name: Head
-      position: {x: -.0819580257, y: -.00655568065, z: 6.38432886e-17}
+      position: {x: -.114741243, y: -.00917795394, z: 8.93806107e-17}
       rotation: {x: 2.98023224e-08, y: -2.98023224e-08, z: -.0335205197, w: .999438047}
       scale: {x: .999999762, y: 1, z: .99999994}
       transformModified: 1
     - name: END
-      position: {x: -.243694305, y: 2.220446e-18, z: -6.42232358e-17}
+      position: {x: -.34117204, y: 3.10862456e-18, z: -8.99125341e-17}
       rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightLidUp
-      position: {x: -.119047903, y: -.0702004358, z: .0485591963}
+      position: {x: -.166667074, y: -.0982806161, z: .0679828823}
       rotation: {x: -2.23517418e-08, y: -2.98023224e-08, z: .866025448, w: -.499999911}
       scale: {x: 1.00000024, y: 1.00000024, z: 1.00000012}
       transformModified: 1
     - name: END 11
-      position: {x: .025000317, y: 1.82452695e-07, z: 1.7763568e-17}
+      position: {x: .0350004472, y: 2.55433804e-07, z: 2.48689965e-17}
       rotation: {x: 7.45058149e-09, y: -.707106829, z: 7.45058149e-09, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightLidLow
-      position: {x: -.119047903, y: -.0702004358, z: .0485591963}
+      position: {x: -.166667074, y: -.0982806161, z: .0679828823}
       rotation: {x: -3.7252903e-08, y: -2.98023224e-08, z: .49999997, w: -.866025388}
       scale: {x: 1, y: 1.00000012, z: 1.00000012}
       transformModified: 1
     - name: END 10
-      position: {x: .025000317, y: -1.82452695e-07, z: 1.7763568e-17}
+      position: {x: .0350004472, y: -2.55433804e-07, z: 2.48689965e-17}
       rotation: {x: 5.26835642e-09, y: -.707106829, z: 5.26835642e-09, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightBrow
-      position: {x: -.151447907, y: -.0213664379, z: .0642597005}
+      position: {x: -.212027088, y: -.0299130157, z: .0899635851}
       rotation: {x: -3.61749346e-11, y: 0, z: .707106829, w: -.707106829}
       scale: {x: .999999881, y: 1, z: 1}
       transformModified: 1
     - name: END 8
-      position: {x: .0699993297, y: -3.89132424e-07, z: -1.7763568e-17}
+      position: {x: .0979990661, y: -5.44785451e-07, z: -2.48689965e-17}
       rotation: {x: 7.45058149e-09, y: -.707106829, z: 7.45058149e-09, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightBrowEmotion
-      position: {x: .0606209971, y: 0, z: 3.5527136e-17}
+      position: {x: .0848693997, y: 0, z: 4.9737993e-17}
       rotation: {x: -2.68963163e-09, y: .608761489, z: 1.93925231e-09, w: .793353379}
       scale: {x: .99999994, y: 1, z: .99999994}
       transformModified: 1
     - name: END 16
-      position: {x: .0400000289, y: 0, z: 2.3863393e-07}
+      position: {x: .0560000427, y: 0, z: 3.34087531e-07}
       rotation: {x: 3.83776302e-17, y: -.707106829, z: 3.83776302e-17, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftBrow
-      position: {x: -.151451573, y: -.0213660877, z: -.0642597452}
+      position: {x: -.212032214, y: -.0299125239, z: -.0899636522}
       rotation: {x: 0, y: -2.09010698e-10, z: .707106829, w: .707106829}
       scale: {x: 1.00000024, y: 1.00000024, z: 1.00000036}
       transformModified: 1
     - name: END 2
-      position: {x: -.0700000003, y: 0, z: 1.7763568e-17}
+      position: {x: -.0980000049, y: 0, z: 2.48689965e-17}
       rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftBrowEmotion
-      position: {x: -.0606217757, y: 0, z: 3.5527136e-17}
+      position: {x: -.0848704949, y: 0, z: 4.9737993e-17}
       rotation: {x: 9.08215891e-10, y: .608761489, z: -9.75514669e-10, w: .793353379}
       scale: {x: .999999642, y: 1, z: .999999881}
       transformModified: 1
     - name: END 13
-      position: {x: -.0399999991, y: 5.68434176e-16, z: -7.1054272e-17}
+      position: {x: -.0560000017, y: 7.95807889e-16, z: -9.94759861e-17}
       rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftLidLow
-      position: {x: -.11904861, y: -.070200637, z: -.0485591963}
+      position: {x: -.166668072, y: -.0982808992, z: -.0679828823}
       rotation: {x: 2.98023224e-08, y: -2.98023224e-08, z: .866025448, w: .5}
       scale: {x: .999999881, y: 1, z: 1.00000012}
       transformModified: 1
     - name: END 4
-      position: {x: -.0249999985, y: -5.68434176e-16, z: 1.7763568e-17}
+      position: {x: -.0350000001, y: -7.95807889e-16, z: 2.48689965e-17}
       rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftLidUp
-      position: {x: -.11904861, y: -.070200637, z: -.0485591963}
+      position: {x: -.166668072, y: -.0982808992, z: -.0679828823}
       rotation: {x: -2.98023224e-08, y: 2.98023224e-08, z: .499999911, w: .866025448}
       scale: {x: 1.00000024, y: 1.00000012, z: 1.00000036}
       transformModified: 1
     - name: END 5
-      position: {x: -.0249999985, y: 0, z: 8.881784e-18}
+      position: {x: -.0350000001, y: 0, z: 1.24344983e-17}
       rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightEmotion
-      position: {x: -.0158679094, y: -.0843284428, z: .00749999983}
+      position: {x: -.0222150739, y: -.118059829, z: .0105000008}
       rotation: {x: .5, y: .5, z: .5, w: -.5}
       scale: {x: 1.00000024, y: .999999821, z: .99999994}
       transformModified: 1
     - name: END 9
-      position: {x: .0700000003, y: -5.68434176e-16, z: 1.50893896e-07}
+      position: {x: .0980000049, y: -7.95807889e-16, z: 2.11251475e-07}
       rotation: {x: 1.36690762e-16, y: -.707106829, z: 1.36690762e-16, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftEmotion
-      position: {x: -.0158631187, y: -.0843280107, z: -.00749999983}
+      position: {x: -.0222083684, y: -.118059225, z: -.0105000008}
       rotation: {x: .5, y: -.5, z: .5, w: .5}
       scale: {x: 1.00000024, y: 1, z: 1.00000012}
       transformModified: 1
     - name: END 3
-      position: {x: -.0700000003, y: -2.84217088e-16, z: -1.42108544e-16}
+      position: {x: -.0980000049, y: -3.97903944e-16, z: -1.98951972e-16}
       rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightSnear
-      position: {x: -.0476879105, y: -.0851164311, z: .0468708985}
+      position: {x: -.0667630807, y: -.119163014, z: .0656192601}
       rotation: {x: .270598114, y: .270598114, z: .65328151, w: -.65328151}
       scale: {x: 1.00000012, y: 1.00000036, z: 1.00000048}
       transformModified: 1
     - name: END 12
-      position: {x: .0400005318, y: 2.84217088e-16, z: -4.94974699e-07}
+      position: {x: .0560007468, y: 3.97903944e-16, z: -6.92964647e-07}
       rotation: {x: -1.34015793e-16, y: -.707106829, z: -1.34015793e-16, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftSnear
-      position: {x: -.0476911813, y: -.0851169154, z: -.0468708947}
+      position: {x: -.0667676553, y: -.119163692, z: -.0656192601}
       rotation: {x: .270598054, y: -.270598054, z: .65328151, w: .65328151}
       scale: {x: 1.00000024, y: 1.00000012, z: 1.00000012}
       transformModified: 1
     - name: END 6
-      position: {x: -.0399999991, y: 0, z: 1.7763568e-17}
+      position: {x: -.0560000017, y: 0, z: 2.48689965e-17}
       rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Jaw
-      position: {x: -.0105189942, y: .00999999978, z: 3.95788883e-18}
+      position: {x: -.0147265932, y: .0140000004, z: 5.5410447e-18}
       rotation: {x: 0, y: 0, z: .713250458, w: .700909317}
       scale: {x: 1.00000012, y: 1.00000024, z: 1.00000036}
       transformModified: 1
     - name: END 1
-      position: {x: -.159999996, y: 0, z: 3.59454851e-18}
+      position: {x: -.224000007, y: 0, z: 5.03236832e-18}
       rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LipBottomRoot
-      position: {x: -.0700000003, y: -8.52651264e-16, z: 3.42262886e-17}
+      position: {x: -.0980000049, y: -1.19371189e-15, z: 4.7916806e-17}
       rotation: {x: 0, y: 0, z: .0348994955, w: .999390841}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightLipBottom
-      position: {x: -.0219999999, y: .00786687713, z: .00800000038}
+      position: {x: -.0308000017, y: .0110136289, z: .0112000015}
       rotation: {x: .499523997, y: -.0218096841, z: .865201175, w: .0377754942}
       scale: {x: 1, y: 1.00000036, z: 1.00000036}
       transformModified: 1
     - name: joint2 1
-      position: {x: .0700000152, y: 0, z: 1.08675442e-08}
+      position: {x: .0980000272, y: 0, z: 1.52145621e-08}
       rotation: {x: 7.45058149e-09, y: -.707106829, z: 7.45058149e-09, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftLipBottom
-      position: {x: -.0219999999, y: .00786683802, z: -.00800000038}
+      position: {x: -.0308000017, y: .011013574, z: -.0112000015}
       rotation: {x: -.021809686, y: -.499524087, z: -.0377754942, w: .865201235}
       scale: {x: 1, y: 1, z: .999999881}
       transformModified: 1
     - name: joint2
-      position: {x: -.0700000003, y: 0, z: 0}
+      position: {x: -.0980000049, y: 0, z: 0}
       rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LipBottom
-      position: {x: -.0709999949, y: 8.52651264e-16, z: 4.48919914e-19}
+      position: {x: -.0993999988, y: 1.19371189e-15, z: 6.284879e-19}
       rotation: {x: -1.86264493e-09, y: -2.98023188e-08, z: .01727999, w: .99985069}
       scale: {x: 1, y: 1, z: .999999702}
       transformModified: 1
     - name: END 17
-      position: {x: -.0136742378, y: 2.84217088e-16, z: 2.43446823e-18}
+      position: {x: -.0191439334, y: 3.97903944e-16, z: 3.40825585e-18}
       rotation: {x: -.0122188879, y: -.707001209, z: -.0122188879, w: .707001209}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: BottomTeeth
-      position: {x: -4.440892e-18, y: -2.84217088e-16, z: 9.46633065e-32}
+      position: {x: -6.21724913e-18, y: -3.97903944e-16, z: 1.32528642e-31}
       rotation: {x: 6.98491753e-09, y: -6.18456258e-11, z: 7.40401305e-08, w: 1}
       scale: {x: .999999821, y: .999999821, z: .999999881}
       transformModified: 1
     - name: Tongue
-      position: {x: -.0750558153, y: .00249999994, z: 3.42262886e-17}
+      position: {x: -.105078146, y: .00350000011, z: 4.7916806e-17}
       rotation: {x: 7.45057882e-09, y: -6.98491764e-10, z: .0871558562, w: .996194661}
       scale: {x: .99999994, y: .999999821, z: .999999762}
       transformModified: 1
     - name: LipBottom 1
-      position: {x: -.0399999991, y: 5.68434176e-16, z: 4.48919914e-19}
+      position: {x: -.0560000017, y: 7.95807889e-16, z: 6.284879e-19}
       rotation: {x: 0, y: 0, z: -.000172314831, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LipTop
-      position: {x: -.0164811257, y: -.0599999987, z: 3.63644711e-17}
+      position: {x: -.0230735783, y: -.0840000063, z: 5.09102635e-17}
       rotation: {x: 0, y: 1.60777391e-10, z: .707106829, w: .707106829}
       scale: {x: 1, y: 1.00000024, z: 1.00000024}
       transformModified: 1
     - name: END 7
-      position: {x: -.099999994, y: 0, z: 5.23228051e-18}
+      position: {x: -.140000001, y: 0, z: 7.32519304e-18}
       rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftLipTop
-      position: {x: -.00499999989, y: .00250627846, z: -.00800000038}
+      position: {x: -.00700000022, y: .00350879016, z: -.0112000015}
       rotation: {x: -3.32784333e-09, y: -.49999997, z: -3.3742682e-09, w: .866025448}
       scale: {x: 1, y: .999999881, z: .99999994}
       transformModified: 1
     - name: END 14
-      position: {x: -.0700000003, y: -8.52651264e-16, z: 1.7763568e-17}
+      position: {x: -.0980000049, y: -1.19371189e-15, z: 2.48689965e-17}
       rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightLipTop
-      position: {x: -.00499999989, y: .00250678463, z: .00800000038}
+      position: {x: -.00700000022, y: .00350949867, z: .0112000015}
       rotation: {x: .49999997, y: 1.79978632e-09, z: .866025448, w: 2.54888821e-09}
       scale: {x: .999999762, y: 1.00000012, z: 1.00000012}
       transformModified: 1
     - name: END 15
-      position: {x: .0700000003, y: 5.68434176e-16, z: -1.18943234e-07}
+      position: {x: .0980000049, y: 7.95807889e-16, z: -1.66520536e-07}
       rotation: {x: -1.46491635e-16, y: -.707106829, z: -1.46491635e-16, w: .707106829}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftEye
-      position: {x: -.11904861, y: -.070200637, z: -.0485591963}
+      position: {x: -.166668072, y: -.0982808992, z: -.0679828823}
       rotation: {x: .49999994, y: -.5, z: .5, w: .5}
       scale: {x: 1.00000036, y: 1.00000024, z: 1.00000024}
       transformModified: 1
     - name: RightEye
-      position: {x: -.119047903, y: -.0702004358, z: .0485591963}
+      position: {x: -.166667074, y: -.0982806161, z: .0679828823}
       rotation: {x: .5, y: .5, z: .5, w: -.49999994}
       scale: {x: 1.00000012, y: .999999881, z: .999999881}
       transformModified: 1
     - name: RightShoulder
-      position: {x: -.167413563, y: .10000053, z: .140000001}
+      position: {x: -.234379008, y: .140000746, z: .19600001}
       rotation: {x: -.527608812, y: -.470774889, z: -.398045808, w: .584430993}
       scale: {x: .999999881, y: 1.00000024, z: 1.00000024}
       transformModified: 1
     - name: RightArm
-      position: {x: .169999063, y: -3.30488342e-06, z: .00674019987}
+      position: {x: .237998709, y: -4.62683693e-06, z: .00943628047}
       rotation: {x: -.00106348528, y: -.00866148248, z: -.121864699, w: .992508352}
       scale: {x: .999999702, y: 1, z: .999999642}
       transformModified: 1
     - name: RightForearm
-      position: {x: .319997698, y: -2.81870211e-06, z: -1.59076095e-07}
+      position: {x: .447996795, y: -3.94618337e-06, z: -2.22706547e-07}
       rotation: {x: 4.50781079e-10, y: .017452402, z: -2.36814763e-08, w: .99984771}
       scale: {x: .999999762, y: .999999762, z: .999999702}
       transformModified: 1
     - name: RightHand
-      position: {x: .230001822, y: 3.07359778e-06, z: 8.91983973e-07}
+      position: {x: .32200256, y: 4.30303726e-06, z: 1.24877761e-06}
       rotation: {x: -1.14361445e-08, y: -.00872654282, z: -1.15404024e-08, w: .999961913}
       scale: {x: 1.00000012, y: 1.00000036, z: 1.0000006}
       transformModified: 1
     - name: RightHandEnd
-      position: {x: .100001991, y: 2.27020837e-06, z: 1.71674844e-06}
+      position: {x: .140002802, y: 3.17829199e-06, z: 2.40344798e-06}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandParent
-      position: {x: .100001991, y: .049999997, z: 1.71674844e-06}
+      position: {x: .140002802, y: .0700000003, z: 2.40344798e-06}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandThumb1
-      position: {x: .00899999961, y: .0259999987, z: -.0799999982}
+      position: {x: .0126, y: .0364000015, z: -.112000003}
       rotation: {x: -.584171474, y: -.31785053, z: .271328956, w: -.695769668}
       scale: {x: 1.00000012, y: 1, z: .99999994}
       transformModified: 1
     - name: RightHandThumb2
-      position: {x: .049999997, y: 8.35951425e-07, z: -1.97117927e-07}
+      position: {x: .0700000003, y: 1.1703321e-06, z: -2.75965107e-07}
       rotation: {x: 6.51925731e-08, y: 0, z: -2.235174e-08, w: 1}
       scale: {x: .999999464, y: .999999821, z: .999999762}
       transformModified: 1
     - name: RightHandThumb3
-      position: {x: .049999997, y: 1.14200098e-07, z: -7.81456549e-07}
+      position: {x: .0700000003, y: 1.59880145e-07, z: -1.09403925e-06}
       rotation: {x: -4.84287668e-08, y: -4.470348e-08, z: -1.86264497e-08, w: 1}
       scale: {x: 1.00000036, y: 1, z: 1.00000012}
       transformModified: 1
     - name: RightHandThumb4
-      position: {x: .049999997, y: -2.99388626e-06, z: 2.56345652e-06}
+      position: {x: .0700000003, y: -4.19144089e-06, z: 3.58883926e-06}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandIndex1
-      position: {x: .126770213, y: -.00999999978, z: -.076530315}
+      position: {x: .177478313, y: -.0140000004, z: -.107142448}
       rotation: {x: 4.69057646e-08, y: .121869355, z: -3.17546078e-09, w: .992546141}
       scale: {x: 1.00000012, y: .999999881, z: .999999821}
       transformModified: 1
     - name: RightHandIndex2
-      position: {x: .0599972457, y: -1.73612477e-06, z: -7.05193315e-07}
+      position: {x: .0839961469, y: -2.4305748e-06, z: -9.8727071e-07}
       rotation: {x: 7.30550056e-08, y: 1.49011612e-08, z: -2.32830555e-08, w: 1}
       scale: {x: .99999994, y: .999999762, z: .999999821}
       transformModified: 1
     - name: RightHandIndex3
-      position: {x: .0399990566, y: -5.92904428e-07, z: -4.57086998e-07}
+      position: {x: .055998683, y: -8.30066256e-07, z: -6.39921836e-07}
       rotation: {x: 9.59984945e-08, y: 0, z: 3.49245788e-08, w: 1}
       scale: {x: .999999821, y: 1.00000012, z: .999999881}
       transformModified: 1
     - name: RightHandIndex4
-      position: {x: .0400006287, y: 6.95658855e-08, z: 2.05690007e-08}
+      position: {x: .0560008846, y: 9.73922454e-08, z: 2.87966024e-08}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandMiddle1
-      position: {x: .131114274, y: -.0199999996, z: -.0247200131}
+      position: {x: .183559999, y: -.0280000009, z: -.0346080214}
       rotation: {x: -.00023595021, y: .0471856147, z: -.00540556107, w: .998871505}
       scale: {x: 1, y: .999999881, z: .999999821}
       transformModified: 1
     - name: RightHandMiddle2
-      position: {x: .0700016394, y: 1.21998426e-06, z: 6.49727951e-07}
+      position: {x: .0980022997, y: 1.70797807e-06, z: 9.09619189e-07}
       rotation: {x: 6.8505372e-08, y: -2.98023224e-08, z: 1.16415366e-08, w: 1}
       scale: {x: 1, y: .999999881, z: 1.00000012}
       transformModified: 1
     - name: RightHandMiddle3
-      position: {x: .0399995595, y: 1.96817453e-07, z: 4.86300511e-09}
+      position: {x: .0559993871, y: 2.75544465e-07, z: 6.80820778e-09}
       rotation: {x: 9.17632335e-08, y: 1.86264515e-08, z: -2.91038971e-09, w: 1}
       scale: {x: 1.00000012, y: 1, z: 1}
       transformModified: 1
     - name: RightHandMiddle4
-      position: {x: .0400002189, y: -8.39644827e-07, z: -1.73173845e-07}
+      position: {x: .0560003109, y: -1.1755028e-06, z: -2.42443406e-07}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandRing1
-      position: {x: .127212644, y: -.00999999978, z: .0297618415}
+      position: {x: .17809771, y: -.0140000004, z: .0416665822}
       rotation: {x: .00296181208, y: .021058172, z: -.0423434898, w: .99887675}
       scale: {x: .99999994, y: 1, z: .999999881}
       transformModified: 1
     - name: RightHandRing2
-      position: {x: .0599979535, y: -8.1425668e-07, z: -8.10133542e-07}
+      position: {x: .0839971378, y: -1.13995941e-06, z: -1.13418707e-06}
       rotation: {x: 4.28725784e-08, y: 1.49011594e-08, z: -2.03726902e-08, w: 1}
       scale: {x: 1, y: .999999881, z: .999999881}
       transformModified: 1
     - name: RightHandRing3
-      position: {x: .0399993286, y: 7.58224417e-08, z: -3.55356121e-07}
+      position: {x: .055999063, y: 1.06151425e-07, z: -4.97498604e-07}
       rotation: {x: 1.20953004e-07, y: 1.49011594e-08, z: 2.32830644e-08, w: 1}
       scale: {x: 1.00000024, y: 1, z: 1.00000024}
       transformModified: 1
     - name: RightHandRing4
-      position: {x: .0399997644, y: 3.58577893e-07, z: 4.53528713e-07}
+      position: {x: .0559996739, y: 5.02009073e-07, z: 6.3494025e-07}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandPinky1
-      position: {x: .106251687, y: 0, z: .0800016075}
+      position: {x: .148752376, y: 0, z: .112002261}
       rotation: {x: .00346120424, y: .0207666848, z: -.0439639427, w: .998811305}
       scale: {x: 1, y: .999999762, z: .999999762}
       transformModified: 1
     - name: RightHandPinky2
-      position: {x: .0500003472, y: -3.76523332e-07, z: 1.22891365e-07}
+      position: {x: .070000492, y: -5.27132727e-07, z: 1.72047919e-07}
       rotation: {x: 3.69986921e-08, y: 3.7252903e-08, z: 1.80079986e-08, w: 1}
       scale: {x: 1.00000024, y: .999999881, z: 1.00000012}
       transformModified: 1
     - name: RightHandPinky3
-      position: {x: .0399995297, y: -1.84848702e-07, z: -6.58236956e-07}
+      position: {x: .0559993461, y: -2.58788191e-07, z: -9.21531807e-07}
       rotation: {x: 1.03711528e-07, y: -2.98023224e-08, z: -1.74623018e-08, w: 1}
       scale: {x: .999999642, y: .99999994, z: .999999642}
       transformModified: 1
     - name: RightHandPinky4
-      position: {x: .0400005504, y: -7.17326376e-09, z: 8.5725943e-10}
+      position: {x: .0560007729, y: -1.00425703e-08, z: 1.2001633e-09}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightForearmTwist
-      position: {x: .114999995, y: 2.47670073e-06, z: 0}
+      position: {x: .160999998, y: 3.46738125e-06, z: 0}
       rotation: {x: -.999961913, y: -9.81377681e-08, z: -.00872654747, w: 2.97261256e-08}
       scale: {x: 1.00000012, y: 1.00000036, z: 1.00000072}
       transformModified: 1
     - name: LeftShoulder
-      position: {x: -.167417288, y: .099999994, z: -.140000001}
+      position: {x: -.234384224, y: .140000001, z: -.19600001}
       rotation: {x: -.470774859, y: .527608752, z: -.584430933, w: -.398045778}
       scale: {x: 1.00000024, y: 1.00000012, z: 1.00000024}
       transformModified: 1
     - name: LeftArm
-      position: {x: -.170000002, y: -5.68434176e-16, z: -.00674023246}
+      position: {x: -.23800002, y: -7.95807889e-16, z: -.0094363261}
       rotation: {x: -.00106347911, y: -.00866148341, z: -.121864684, w: .992508352}
       scale: {x: .999999583, y: 1, z: .99999994}
       transformModified: 1
     - name: LeftForearm
-      position: {x: -.319999993, y: -5.68434176e-16, z: 8.881784e-18}
+      position: {x: -.448000014, y: -7.95807889e-16, z: 1.24344983e-17}
       rotation: {x: -2.30092763e-08, y: .0174523965, z: -6.22593799e-09, w: .99984771}
       scale: {x: 1.00000012, y: 1.00000012, z: .999999881}
       transformModified: 1
     - name: LeftHand
-      position: {x: -.229999989, y: -2.84217088e-16, z: 0}
+      position: {x: -.321999997, y: -3.97903944e-16, z: 0}
       rotation: {x: -2.31044055e-08, y: -.00872654282, z: -2.93070102e-08, w: .999961913}
       scale: {x: .999999702, y: .999999881, z: 1.00000012}
       transformModified: 1
     - name: LeftHandEnd
-      position: {x: -.099999994, y: 2.84217088e-16, z: -2.98511219e-16}
+      position: {x: -.140000001, y: 3.97903944e-16, z: -4.17915733e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandParent
-      position: {x: -.099999994, y: -.049999997, z: 2.10553716e-16}
+      position: {x: -.140000001, y: -.0700000003, z: 2.94775221e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandThumb1
-      position: {x: -.00899999961, y: -.0259999987, z: .0799999982}
+      position: {x: -.0126, y: -.0364000015, z: .112000003}
       rotation: {x: .584175467, y: .317847788, z: -.271319807, w: .695771039}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandThumb2
-      position: {x: -.049999997, y: 0, z: -5.68434176e-16}
+      position: {x: -.0700000003, y: 0, z: -7.95807889e-16}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandThumb3
-      position: {x: -.049999997, y: 0, z: -1.42108544e-16}
+      position: {x: -.0700000003, y: 0, z: -1.98951972e-16}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandThumb4
-      position: {x: -.049999997, y: 1.42108544e-16, z: -2.84217088e-16}
+      position: {x: -.0700000003, y: 1.98951972e-16, z: -3.97903944e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandIndex1
-      position: {x: -.126767755, y: .00999999978, z: .0765314996}
+      position: {x: -.177474871, y: .0140000004, z: .10714411}
       rotation: {x: 1.93216572e-08, y: .12186937, z: 2.03734221e-08, w: .992546141}
       scale: {x: 1.00000012, y: 1.00000012, z: .99999994}
       transformModified: 1
     - name: LeftHandIndex2
-      position: {x: -.0599999987, y: 0, z: -3.5527136e-17}
+      position: {x: -.0840000063, y: 0, z: -4.9737993e-17}
       rotation: {x: -4.63270524e-08, y: 7.4505806e-09, z: -2.00088834e-09, w: 1}
       scale: {x: 1.00000012, y: 1, z: 1.00000012}
       transformModified: 1
     - name: LeftHandIndex3
-      position: {x: -.0399999991, y: -5.68434176e-16, z: -3.5527136e-17}
+      position: {x: -.0560000017, y: -7.95807889e-16, z: -4.9737993e-17}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: .99999994, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandIndex4
-      position: {x: -.0399999991, y: -2.84217088e-16, z: 1.06581408e-16}
+      position: {x: -.0560000017, y: -3.97903944e-16, z: 1.49213986e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandMiddle1
-      position: {x: -.13111566, y: .0199999996, z: .0247199982}
+      position: {x: -.183561936, y: .0280000009, z: .034607999}
       rotation: {x: -.000235430489, y: .0471787937, z: -.00539516751, w: .998871863}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandMiddle2
-      position: {x: -.0700000003, y: -2.84217088e-16, z: -1.42108544e-16}
+      position: {x: -.0980000049, y: -3.97903944e-16, z: -1.98951972e-16}
       rotation: {x: -2.33212916e-08, y: 3.72528963e-09, z: -8.73114914e-09, w: 1}
       scale: {x: 1, y: 1.00000024, z: 1}
       transformModified: 1
     - name: LeftHandMiddle3
-      position: {x: -.0399999991, y: -2.84217088e-16, z: 3.5527136e-17}
+      position: {x: -.0560000017, y: -3.97903944e-16, z: 4.9737993e-17}
       rotation: {x: 2.19262031e-08, y: -3.7252903e-08, z: -1.74622841e-08, w: 1}
       scale: {x: 1.00000024, y: 1.00000036, z: 1}
       transformModified: 1
     - name: LeftHandMiddle4
-      position: {x: -.0399999991, y: 0, z: -5.3290704e-17}
+      position: {x: -.0560000017, y: 0, z: -7.46069929e-17}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandRing1
-      position: {x: -.127211303, y: .00999999978, z: -.029761076}
+      position: {x: -.178095832, y: .0140000004, z: -.0416655093}
       rotation: {x: .00296126259, y: .0210644882, z: -.0423481762, w: .998876452}
       scale: {x: 1.00000024, y: 1.00000024, z: .99999994}
       transformModified: 1
     - name: LeftHandRing2
-      position: {x: -.0599999987, y: 0, z: -8.88178367e-17}
+      position: {x: -.0840000063, y: 0, z: -1.24344979e-16}
       rotation: {x: -3.08848369e-09, y: -1.52183696e-16, z: 5.82076609e-09, w: 1}
       scale: {x: .99999994, y: 1, z: 1.00000012}
       transformModified: 1
     - name: LeftHandRing3
-      position: {x: -.0399999991, y: 0, z: 4.440892e-18}
+      position: {x: -.0560000017, y: 0, z: 6.21724913e-18}
       rotation: {x: 3.29100591e-09, y: 1.49011594e-08, z: -2.61934474e-08, w: 1}
       scale: {x: .99999994, y: 1, z: 1.00000012}
       transformModified: 1
     - name: LeftHandRing4
-      position: {x: -.0399999991, y: -2.84217088e-16, z: -7.54951665e-17}
+      position: {x: -.0560000017, y: -3.97903944e-16, z: -1.05693241e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandPinky1
-      position: {x: -.106252432, y: 3.10250722e-33, z: -.080001466}
+      position: {x: -.14875342, y: 4.3435104e-33, z: -.11200206}
       rotation: {x: .00346015487, y: .0207653772, z: -.0439659022, w: .998811245}
       scale: {x: 1, y: .999999881, z: 1}
       transformModified: 1
     - name: LeftHandPinky2
-      position: {x: -.049999997, y: 0, z: 8.43769488e-17}
+      position: {x: -.0700000003, y: 0, z: 1.18127731e-16}
       rotation: {x: 2.37931577e-08, y: 7.4505806e-09, z: 1.45519263e-09, w: 1}
       scale: {x: 1, y: 1.00000012, z: 1}
       transformModified: 1
     - name: LeftHandPinky3
-      position: {x: -.0399999991, y: 1.42108544e-16, z: 0}
+      position: {x: -.0560000017, y: 1.98951972e-16, z: 0}
       rotation: {x: -3.62019357e-08, y: -2.98135993e-18, z: -8.73115447e-09, w: 1}
       scale: {x: .99999994, y: .99999994, z: 1}
       transformModified: 1
     - name: LeftHandPinky4
-      position: {x: -.0399999991, y: -1.42108544e-16, z: -4.88498128e-17}
+      position: {x: -.0560000017, y: -1.98951972e-16, z: -6.83897446e-17}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftForearmTwist
-      position: {x: -.114999995, y: -2.84217088e-16, z: 0}
+      position: {x: -.160999998, y: -3.97903944e-16, z: 0}
       rotation: {x: 1.04308135e-07, y: -.00872645248, z: 7.45058131e-08, w: .999961913}
       scale: {x: .999999762, y: .999999821, z: .99999994}
       transformModified: 1

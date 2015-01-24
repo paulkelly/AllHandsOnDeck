@@ -9,12 +9,25 @@ public class ObjCollider : IObj
 	[Inject]
 	public FixLeak fixLeak { get; set; }
 
+	[Inject]
+	public RemoveObject removeObject { get; set; }
+
 	public IObj nearestObj;
 	private List<IObj> objectsInRange = new List<IObj>();
 
 	protected override void OnStart()
 	{
 		fixLeak.AddListener (RemoveLeak);
+
+		removeObject.AddListener (Remove);
+	}
+
+	private void Remove(IObj obj)
+	{
+		if(objectsInRange.Contains(obj))
+		{
+			objectsInRange.Remove(obj);
+		}
 	}
 
 	private void RemoveLeak(Leak leak)
@@ -72,6 +85,29 @@ public class ObjCollider : IObj
 		}
 	}
 
+	public bool isNearestColliderPlug
+	{
+		get
+		{
+			if(nearestObj != null)
+			{
+				Plug plug = null;
+				try
+				{
+					plug = (Plug) nearestObj;
+				}
+				catch(InvalidCastException e)
+				{
+				}
+				if(plug != null)
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+	}
+
 	void OnTriggerEnter(Collider collider)
 	{
 		IObj obj = collider.transform.GetComponent<IObj> ();
@@ -105,6 +141,14 @@ public class ObjCollider : IObj
 					nearestObj = obj;
 				}
 			}
+		}
+	}
+
+	public override void FixLeak(Plug plug)
+	{
+		if(nearestObj != null)
+		{
+			nearestObj.FixLeak(plug);
 		}
 	}
 

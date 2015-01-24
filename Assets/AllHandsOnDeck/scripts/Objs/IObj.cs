@@ -15,6 +15,14 @@ public class IObj : View
 	{
 	}
 
+	public virtual void FixLeak(Plug plug)
+	{
+	}
+
+	public virtual void Use(Leak leak)
+	{
+	}
+
 	public virtual void ADown ()
 	{
 	}
