@@ -11,6 +11,11 @@ public class LeakSpawner : View
 	
 	[Inject]
 	public FixLeak fixLeak { get; set; }
+	
+	[Inject]
+	public StartGame startGame { get; set; }
+	
+	private bool started = false;
 
 	public List<Leak> leaks = new List<Leak>();
 
@@ -23,14 +28,21 @@ public class LeakSpawner : View
 	public float maxSpawnTime;
 
 	private float timeMulti = 120;
-
-	public float timeMultiplier;
+	private float multiTimer = 0;
+	private float timeMultiplier;
 
 	private float timer;
 	private float maxTime = 1;
 
 	void Update()
 	{
+		if(!started)
+		{	
+			return;
+		}
+	
+		multiTimer += Time.deltaTime;
+	
 		if(timer < maxTime)
 		{
 			timer += Time.deltaTime;
@@ -38,7 +50,7 @@ public class LeakSpawner : View
 		else
 		{
 			timer = 0;
-			timeMultiplier = Mathf.Max(0.5f, 1 - (Time.time / timeMulti));
+			timeMultiplier = Mathf.Max(0.7f, 1 - (multiTimer / timeMulti));
 			maxTime = Random.Range(minSpawnTime, maxSpawnTime) * timeMultiplier;
 
 			Spawn ();
@@ -47,9 +59,15 @@ public class LeakSpawner : View
 
 	void Start()
 	{
+		startGame.AddListener(StartTheGame);
 		fixLeak.AddListener (FixedLeak);
-		timeMultiplier = Mathf.Max(0.5f, 1 - (timeMulti * Time.time));
+		timeMultiplier = Mathf.Max(0.7f, 1 - (timeMulti * multiTimer));
 		maxTime = Random.Range(minSpawnTime, maxSpawnTime) + startDelay;
+	}
+	
+	private void StartTheGame()
+	{
+		started = true;
 	}
 
 	public void Spawn()

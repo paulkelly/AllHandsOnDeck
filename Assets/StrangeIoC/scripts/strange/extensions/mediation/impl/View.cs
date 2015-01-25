@@ -70,6 +70,11 @@ namespace strange.extensions.mediation.impl
 		{
 			if (autoRegisterWithContext && !registeredWithContext)
 				bubbleToContext(this, true, false);
+			OnAwake ();
+		}
+		
+		protected virtual void OnAwake()
+		{
 		}
 
 		/// A MonoBehaviour Start handler

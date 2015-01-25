@@ -2,9 +2,11 @@
 using System.Collections;
 using AllHandsOnDeck.Character;
 using InControl;
+using strange.extensions.mediation.impl;
+using AllHandsOnDeck.Common;
 
-public class CharacterSpawner : MonoBehaviour
-{	
+public class CharacterSpawner : View
+{		
 	public virtual float MaxPlayers
 	{
 		get {return 0;}

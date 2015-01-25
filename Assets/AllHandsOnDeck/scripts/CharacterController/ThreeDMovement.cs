@@ -2,12 +2,24 @@
 using System.Collections;
 using strange.extensions.mediation.impl;
 using System;
+using AllHandsOnDeck.Common;
 
 namespace AllHandsOnDeck.Character
 {
 	[RequireComponent (typeof(Rigidbody))]
 	public class ThreeDMovement : View, ICharacter
 	{
+		[Inject]
+		public EndGame endgame { get; set; }
+		
+		private bool gameOver = false;
+		private void GameOver()
+		{
+			gameOver = true;
+		}
+		
+		
+	
 		[Range (0,20)]
 		public float speed;
 		
@@ -105,9 +117,9 @@ namespace AllHandsOnDeck.Character
 			animator.SetTrigger ("fix");
 		}
 		
-		void Start ()
+		protected override void OnStart ()
 		{
-			
+			endgame.AddListener(GameOver);
 		}
 		
 		void Update ()
@@ -119,6 +131,12 @@ namespace AllHandsOnDeck.Character
 			
 		public void Move (Vector2 value)
 		{
+			if(gameOver)
+			{
+				animatorSpeed = 0;
+				return;
+			}
+		
 			Vector3 translation = new Vector3 (value.x, 0, -value.y);
 			
 			translation = Camera.main.cameraToWorldMatrix.MultiplyVector (translation);
@@ -144,6 +162,11 @@ namespace AllHandsOnDeck.Character
 	
 		public void Action1Down ()
 		{
+			if(gameOver)
+			{
+				return;
+			}
+		
 			if(hasItem)
 			{
 				if(isHoldingBucket)
@@ -274,6 +297,11 @@ namespace AllHandsOnDeck.Character
 
 		public void Action1Up ()
 		{
+			if(gameOver)
+			{
+				return;
+			}
+		
 			if(hasItem)
 			{
 				if(isHoldingBucket)
@@ -348,6 +376,11 @@ namespace AllHandsOnDeck.Character
 
 		public void Action2Down ()
 		{
+			if(gameOver)
+			{
+				return;
+			}
+		
 			if(hasItem)
 			{
 				holding.Drop();

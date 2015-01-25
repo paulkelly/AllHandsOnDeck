@@ -6,6 +6,9 @@ public class Plug : IObj
 {	
 	[Inject]
 	public RemoveObject removeObject { get; set; }
+	
+	[Inject]
+	public RespawnPlug respawnPlug { get; set; }
 
 	public Transform world;	
 	public Transform obj;
@@ -34,6 +37,7 @@ public class Plug : IObj
 		obj.localPosition = Vector3.zero;
 		obj.localRotation = Quaternion.identity;
 		leak.FixLeak (this);
+		respawnPlug.Dispatch();
 	}
 
 	void Update()

@@ -23,4 +23,20 @@ namespace AllHandsOnDeck.Common
 	public class RemoveObject : Signal<IObj>
 	{
 	}
+	
+	public class StartGame : Signal
+	{
+	}
+	
+	public class EndGame : Signal
+	{
+	}
+	
+	public class RollCredits : Signal<float>
+	{
+	}
+	
+	public class RespawnPlug : Signal
+	{
+	}
 }

@@ -21,6 +21,12 @@ namespace AllHandsOnDeck.Context
 			injectionBinder.Bind<FixLeak> ().ToSingleton ();
 
 			injectionBinder.Bind<RemoveObject> ().ToSingleton ();
+			
+			injectionBinder.Bind<RespawnPlug>().ToSingleton();
+			
+			injectionBinder.Bind<StartGame>().ToSingleton();
+			injectionBinder.Bind<EndGame>().ToSingleton();
+			injectionBinder.Bind<RollCredits>().ToSingleton();
 		}
 	}
 }
