@@ -280,6 +280,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths:
     - Skeleton/Hips/item
+    - Skeleton/Hips/Spine/Chest/Neck/Head
     clipAnimations:
     - serializedVersion: 16
       name: idle

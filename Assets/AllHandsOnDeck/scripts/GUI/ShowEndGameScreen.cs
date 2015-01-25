@@ -52,7 +52,7 @@ public class ShowEndGameScreen : View
 	
 	private float GetTopScore(float surviveTime)
 	{
-		PlayerPrefs.DeleteKey(key);
+		//PlayerPrefs.DeleteKey(key);
 		float topscore = 0;
 		if(PlayerPrefs.HasKey(key))
 		{

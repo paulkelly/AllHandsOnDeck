@@ -20,12 +20,16 @@ public class WaterLevelUpdater : View
 	
 	[Inject]
 	public StartGame startGame { get; set; }
-	
+
+	public AudioSource endGame;
+	public AudioSource music;
+	public AudioSource waterSFX;
+
 	private bool started = false;
 	private bool ended = false;
 	private bool rolledCredits = false;
 	private float endCinTimer = 0;
-	private float endCinTime = 5;
+	private float endCinTime = 0.5f;
 
 	public Transform ship;
 	public Transform water;
@@ -51,6 +55,14 @@ public class WaterLevelUpdater : View
 		started = true;
 	}
 
+	private float musicStartVol = 1;
+	private float musicEndVol = 0;
+	private float waterStartVol = 0.35f;
+	private float waterEndVol = 0.1f;
+
+	private float musicFadeTime = 0;
+	private float maxMusicFadeTime = 2f;
+
 	void Update()
 	{
 		if(!started)
@@ -65,14 +77,31 @@ public class WaterLevelUpdater : View
 		else if(!rolledCredits && endCinTimer > endCinTime)
 		{
 			rolledCredits = true;
+			endGame.Play();
 			rollCredits.Dispatch(surviveTime);
 		}
 		else
 		{
 			endCinTimer += Time.deltaTime;
 		}
+
+		if(rolledCredits)
+		{
+			musicFadeTime += Time.deltaTime;
+			float percComplete = musicFadeTime / maxMusicFadeTime;
+			if(percComplete < 1)
+			{
+				music.volume = musicStartVol + ((musicEndVol - musicStartVol) * percComplete);
+				waterSFX.volume = waterStartVol + ((waterEndVol - waterStartVol) * percComplete);
+			}
+			else
+			{
+				music.volume = 0;
+				waterSFX.volume = waterEndVol;
+			}
+		}
 	
-		levelGui.text = "" + Mathf.FloorToInt(waterLevel);
+		//levelGui.text = "" + Mathf.FloorToInt(waterLevel);
 		water.renderer.material.color = new Color (water.renderer.material.color.r, water.renderer.material.color.g, water.renderer.material.color.b, waterLevel / 100);
 
 		float y = maxY - (maxY - (waterLevel / 100) * minY);

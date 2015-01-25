@@ -13,6 +13,13 @@ public class Leak : IObj
 	[Inject]
 	public FixLeak fixLeak { get; set; }
 
+	[Inject]
+	public EndGame endgame { get; set; }
+
+	public AudioSource burst;
+	public AudioSource constant;
+	public AudioSource plugedSFX;
+
 	private bool plugged = false;
 	public bool Plugged
 	{
@@ -24,6 +31,10 @@ public class Leak : IObj
 		set
 		{
 			plugged = value;
+			if(!plugged)
+			{
+				burst.Play ();
+			}
 			unpluggedEffect.Enabled = !plugged;
 			pluggedEffect.Enabled = plugged;
 		}
@@ -37,6 +48,8 @@ public class Leak : IObj
 	private void Enable()
 	{
 		gameObject.SetActive (true);
+		burst.Play ();
+		constant.Play ();
 
 		if(plug != null)
 		{
@@ -47,25 +60,60 @@ public class Leak : IObj
 	private void Disable()
 	{
 		gameObject.SetActive (false);
+		burst.Stop ();
+		constant.Stop ();
+		plugedSFX.Play ();
 	}
 
 	void Start()
 	{
+		endgame.AddListener (EndTheGame);
 		springLeak.AddListener (SpringLeak);
 		Plugged = false;
 		Disable ();
 	}
 
+	private void EndTheGame()
+	{
+		gameOver = true;
+	}
+
+	bool gameOver = false;
+
+	private float sfxStartVol = 1;
+	private float sfxEndVol = 0;
+	
+	private float sfxFadeTime = 0;
+	private float maxSfxFadeTime = 4f;
 	void Update()
 	{
 		if(!Plugged)
 		{
 			addWater.Dispatch(waterPerSecond * Time.deltaTime);
 		}
+
+		if(gameOver)
+		{
+			sfxFadeTime += Time.deltaTime;
+			float percComplete = sfxFadeTime / maxSfxFadeTime;
+			if(percComplete < 1)
+			{
+				constant.volume = sfxStartVol + ((sfxEndVol - sfxStartVol) * percComplete);
+			}
+			else
+			{
+				constant.volume = sfxEndVol;
+			}
+		}
 	}
 
 	public void SpringLeak(Leak leak)
 	{
+		if(gameOver)
+		{
+			return;
+		}
+
 		if(leak.GetHashCode() == GetHashCode())
 		{
 			Enable ();

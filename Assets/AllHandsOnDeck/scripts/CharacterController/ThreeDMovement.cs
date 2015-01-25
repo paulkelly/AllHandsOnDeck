@@ -18,7 +18,8 @@ namespace AllHandsOnDeck.Character
 			gameOver = true;
 		}
 		
-		
+		public AudioSource collectWater;
+		public AudioSource throwWater;
 	
 		[Range (0,20)]
 		public float speed;
@@ -78,7 +79,6 @@ namespace AllHandsOnDeck.Character
 		public void CollectWater()
 		{
 			CollectingWater = true;
-			holding.ADown();
 		}
 
 		public bool CollectingWater
@@ -173,7 +173,7 @@ namespace AllHandsOnDeck.Character
 				{
 					CollectWater();
 				}
-				if(isHoldingPlug)
+				if(isHoldingPlug && objCollider.isNearestColliderLeak)
 				{
 					Fix();
 				}
@@ -192,6 +192,10 @@ namespace AllHandsOnDeck.Character
 					if(objCollider.isNearestColliderPlug)
 					{
 						Plug = true;
+					}
+					else
+					{
+						Bucket = true;
 					}
 
 					Grab();
@@ -288,6 +292,7 @@ namespace AllHandsOnDeck.Character
 			if(objCollider.isNearestColliderLeak)
 			{
 				holding.ADown();
+				Plug = false;
 				//objCollider.FixLeak();
 				hasItem = false;
 				holding.Use((Leak) objCollider.nearestObj);
@@ -341,6 +346,7 @@ namespace AllHandsOnDeck.Character
 				{
 					holding.ADown();
 					bucketFull = true;
+					collectWater.Play();
 				}
 			}
 		}
@@ -351,6 +357,7 @@ namespace AllHandsOnDeck.Character
 		public void ReleaseWater()
 		{
 			throwWaterEffect.Enabled = true;
+			throwWater.Play ();
 
 			Ray ray = new Ray(head.position, aim.position - head.position);
 
@@ -381,14 +388,15 @@ namespace AllHandsOnDeck.Character
 				return;
 			}
 		
-			if(hasItem)
+			if(holding != null)
 			{
 				holding.Drop();
-				hasItem = false;
-				Bucket = false;
-				holding = null;
-				Plug = false;
 			}
+			hasItem = false;
+			Bucket = false;
+			holding = null;
+			Plug = false;
+
 		}
 
 		public void Action2Up ()
